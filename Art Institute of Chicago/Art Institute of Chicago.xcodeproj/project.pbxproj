@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E2FC5A52B0E3894009A1760 /* ArticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2FC5A42B0E3894009A1760 /* ArticData.swift */; };
 		4E9ED08E2B0DD201008B4CF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9ED08D2B0DD201008B4CF6 /* AppDelegate.swift */; };
 		4E9ED0902B0DD201008B4CF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9ED08F2B0DD201008B4CF6 /* SceneDelegate.swift */; };
-		4E9ED0922B0DD201008B4CF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9ED0912B0DD201008B4CF6 /* ViewController.swift */; };
-		4E9ED0952B0DD201008B4CF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E9ED0932B0DD201008B4CF6 /* Main.storyboard */; };
+		4E9ED0922B0DD201008B4CF6 /* GalleryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9ED0912B0DD201008B4CF6 /* GalleryController.swift */; };
 		4E9ED0972B0DD203008B4CF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E9ED0962B0DD203008B4CF6 /* Assets.xcassets */; };
 		4E9ED09A2B0DD203008B4CF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E9ED0982B0DD203008B4CF6 /* LaunchScreen.storyboard */; };
 		4E9ED0A32B0DDA79008B4CF6 /* Emilea.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E9ED0A22B0DDA79008B4CF6 /* Emilea.ttf */; };
@@ -18,14 +18,22 @@
 		4E9ED0A72B0DDB5A008B4CF6 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E9ED0A62B0DDB5A008B4CF6 /* Montserrat-ExtraBold.ttf */; };
 		4E9ED0A92B0DDB74008B4CF6 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E9ED0A82B0DDB74008B4CF6 /* Montserrat-Regular.ttf */; };
 		4E9ED0AB2B0DDB87008B4CF6 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E9ED0AA2B0DDB87008B4CF6 /* Montserrat-Light.ttf */; };
+		4EBA93452B0F379000B570FD /* ArticCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA93442B0F379000B570FD /* ArticCustomCell.swift */; };
+		4EE225042B0E1FE6007D7A41 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE225032B0E1FE6007D7A41 /* TabBarController.swift */; };
+		4EE225062B0E266A007D7A41 /* Resouces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE225052B0E266A007D7A41 /* Resouces.swift */; };
+		4EE225082B0E29FD007D7A41 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE225072B0E29FD007D7A41 /* NavBarController.swift */; };
+		4EE2250B2B0E2F2D007D7A41 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE2250A2B0E2F2D007D7A41 /* BaseController.swift */; };
+		4EE225112B0E3257007D7A41 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE225102B0E3257007D7A41 /* FavoriteViewController.swift */; };
+		4EE225132B0E3283007D7A41 /* ArticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE225122B0E3283007D7A41 /* ArticViewController.swift */; };
+		4EE225162B0E34F9007D7A41 /* APIArticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE225152B0E34F9007D7A41 /* APIArticManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E2FC5A42B0E3894009A1760 /* ArticData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticData.swift; sourceTree = "<group>"; };
 		4E9ED08A2B0DD201008B4CF6 /* Art Institute of Chicago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Art Institute of Chicago.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E9ED08D2B0DD201008B4CF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E9ED08F2B0DD201008B4CF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4E9ED0912B0DD201008B4CF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4E9ED0942B0DD201008B4CF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4E9ED0912B0DD201008B4CF6 /* GalleryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryController.swift; sourceTree = "<group>"; };
 		4E9ED0962B0DD203008B4CF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E9ED0992B0DD203008B4CF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E9ED09B2B0DD203008B4CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,6 +42,14 @@
 		4E9ED0A62B0DDB5A008B4CF6 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
 		4E9ED0A82B0DDB74008B4CF6 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		4E9ED0AA2B0DDB87008B4CF6 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		4EBA93442B0F379000B570FD /* ArticCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticCustomCell.swift; sourceTree = "<group>"; };
+		4EE225032B0E1FE6007D7A41 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		4EE225052B0E266A007D7A41 /* Resouces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resouces.swift; sourceTree = "<group>"; };
+		4EE225072B0E29FD007D7A41 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
+		4EE2250A2B0E2F2D007D7A41 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		4EE225102B0E3257007D7A41 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		4EE225122B0E3283007D7A41 /* ArticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticViewController.swift; sourceTree = "<group>"; };
+		4EE225152B0E34F9007D7A41 /* APIArticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIArticManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +85,7 @@
 				4EB00E022B0DE5E5009A380C /* API */,
 				4EB00E012B0DE5C0009A380C /* Application */,
 				4EB00E002B0DE531009A380C /* Resources */,
-				4E9ED0912B0DD201008B4CF6 /* ViewController.swift */,
+				4EE225092B0E2EF8007D7A41 /* Controllers */,
 			);
 			path = "Art Institute of Chicago";
 			sourceTree = "<group>";
@@ -89,7 +105,7 @@
 		4EB00E002B0DE531009A380C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4E9ED0932B0DD201008B4CF6 /* Main.storyboard */,
+				4EE225052B0E266A007D7A41 /* Resouces.swift */,
 				4E9ED0962B0DD203008B4CF6 /* Assets.xcassets */,
 				4E9ED0982B0DD203008B4CF6 /* LaunchScreen.storyboard */,
 				4E9ED09B2B0DD203008B4CF6 /* Info.plist */,
@@ -110,8 +126,64 @@
 		4EB00E022B0DE5E5009A380C /* API */ = {
 			isa = PBXGroup;
 			children = (
+				4EE225142B0E34A9007D7A41 /* Artic */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		4EE225092B0E2EF8007D7A41 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4EE2250F2B0E31F9007D7A41 /* Artic */,
+				4EE2250E2B0E31F0007D7A41 /* Favorite */,
+				4EE2250D2B0E31E2007D7A41 /* Gallery */,
+				4EE2250C2B0E31C6007D7A41 /* Base */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4EE2250C2B0E31C6007D7A41 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4EE225032B0E1FE6007D7A41 /* TabBarController.swift */,
+				4EE225072B0E29FD007D7A41 /* NavBarController.swift */,
+				4EE2250A2B0E2F2D007D7A41 /* BaseController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		4EE2250D2B0E31E2007D7A41 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				4E9ED0912B0DD201008B4CF6 /* GalleryController.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		4EE2250E2B0E31F0007D7A41 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				4EE225102B0E3257007D7A41 /* FavoriteViewController.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		4EE2250F2B0E31F9007D7A41 /* Artic */ = {
+			isa = PBXGroup;
+			children = (
+				4EE225122B0E3283007D7A41 /* ArticViewController.swift */,
+				4EBA93442B0F379000B570FD /* ArticCustomCell.swift */,
+			);
+			path = Artic;
+			sourceTree = "<group>";
+		};
+		4EE225142B0E34A9007D7A41 /* Artic */ = {
+			isa = PBXGroup;
+			children = (
+				4EE225152B0E34F9007D7A41 /* APIArticManager.swift */,
+				4E2FC5A42B0E3894009A1760 /* ArticData.swift */,
+			);
+			path = Artic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,7 +250,6 @@
 				4E9ED09A2B0DD203008B4CF6 /* LaunchScreen.storyboard in Resources */,
 				4E9ED0AB2B0DDB87008B4CF6 /* Montserrat-Light.ttf in Resources */,
 				4E9ED0972B0DD203008B4CF6 /* Assets.xcassets in Resources */,
-				4E9ED0952B0DD201008B4CF6 /* Main.storyboard in Resources */,
 				4E9ED0A32B0DDA79008B4CF6 /* Emilea.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,23 +261,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E9ED0922B0DD201008B4CF6 /* ViewController.swift in Sources */,
+				4EE225062B0E266A007D7A41 /* Resouces.swift in Sources */,
+				4EE225082B0E29FD007D7A41 /* NavBarController.swift in Sources */,
+				4EE2250B2B0E2F2D007D7A41 /* BaseController.swift in Sources */,
+				4E9ED0922B0DD201008B4CF6 /* GalleryController.swift in Sources */,
+				4EE225132B0E3283007D7A41 /* ArticViewController.swift in Sources */,
+				4EE225042B0E1FE6007D7A41 /* TabBarController.swift in Sources */,
+				4EBA93452B0F379000B570FD /* ArticCustomCell.swift in Sources */,
 				4E9ED08E2B0DD201008B4CF6 /* AppDelegate.swift in Sources */,
+				4EE225112B0E3257007D7A41 /* FavoriteViewController.swift in Sources */,
 				4E9ED0902B0DD201008B4CF6 /* SceneDelegate.swift in Sources */,
+				4E2FC5A52B0E3894009A1760 /* ArticData.swift in Sources */,
+				4EE225162B0E34F9007D7A41 /* APIArticManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4E9ED0932B0DD201008B4CF6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4E9ED0942B0DD201008B4CF6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4E9ED0982B0DD203008B4CF6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -343,7 +415,6 @@
 				INFOPLIST_FILE = "Art Institute of Chicago/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -370,7 +441,6 @@
 				INFOPLIST_FILE = "Art Institute of Chicago/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
