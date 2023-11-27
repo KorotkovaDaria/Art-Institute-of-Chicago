@@ -7,15 +7,10 @@
 
 import UIKit
 
-class GalleryController: BaseController {
-    
+class GalleryController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       
-        
+        view.backgroundColor = UIColor(named:Resouces.Colors.beige)
     }
-
-
 }
 

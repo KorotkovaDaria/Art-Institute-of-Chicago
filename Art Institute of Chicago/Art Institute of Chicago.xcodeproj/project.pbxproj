@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4E2FC5A52B0E3894009A1760 /* ArticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2FC5A42B0E3894009A1760 /* ArticData.swift */; };
+		4E9E33B92B1479C200112D9D /* ArticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E33B82B1479C200112D9D /* ArticView.swift */; };
 		4E9ED08E2B0DD201008B4CF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9ED08D2B0DD201008B4CF6 /* AppDelegate.swift */; };
 		4E9ED0902B0DD201008B4CF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9ED08F2B0DD201008B4CF6 /* SceneDelegate.swift */; };
 		4E9ED0922B0DD201008B4CF6 /* GalleryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9ED0912B0DD201008B4CF6 /* GalleryController.swift */; };
@@ -22,7 +23,6 @@
 		4EE225042B0E1FE6007D7A41 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE225032B0E1FE6007D7A41 /* TabBarController.swift */; };
 		4EE225062B0E266A007D7A41 /* Resouces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE225052B0E266A007D7A41 /* Resouces.swift */; };
 		4EE225082B0E29FD007D7A41 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE225072B0E29FD007D7A41 /* NavBarController.swift */; };
-		4EE2250B2B0E2F2D007D7A41 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE2250A2B0E2F2D007D7A41 /* BaseController.swift */; };
 		4EE225112B0E3257007D7A41 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE225102B0E3257007D7A41 /* FavoriteViewController.swift */; };
 		4EE225132B0E3283007D7A41 /* ArticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE225122B0E3283007D7A41 /* ArticViewController.swift */; };
 		4EE225162B0E34F9007D7A41 /* APIArticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE225152B0E34F9007D7A41 /* APIArticManager.swift */; };
@@ -30,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		4E2FC5A42B0E3894009A1760 /* ArticData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticData.swift; sourceTree = "<group>"; };
+		4E9E33B82B1479C200112D9D /* ArticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticView.swift; sourceTree = "<group>"; };
 		4E9ED08A2B0DD201008B4CF6 /* Art Institute of Chicago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Art Institute of Chicago.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E9ED08D2B0DD201008B4CF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E9ED08F2B0DD201008B4CF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +47,6 @@
 		4EE225032B0E1FE6007D7A41 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		4EE225052B0E266A007D7A41 /* Resouces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resouces.swift; sourceTree = "<group>"; };
 		4EE225072B0E29FD007D7A41 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
-		4EE2250A2B0E2F2D007D7A41 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		4EE225102B0E3257007D7A41 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		4EE225122B0E3283007D7A41 /* ArticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticViewController.swift; sourceTree = "<group>"; };
 		4EE225152B0E34F9007D7A41 /* APIArticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIArticManager.swift; sourceTree = "<group>"; };
@@ -147,7 +147,6 @@
 			children = (
 				4EE225032B0E1FE6007D7A41 /* TabBarController.swift */,
 				4EE225072B0E29FD007D7A41 /* NavBarController.swift */,
-				4EE2250A2B0E2F2D007D7A41 /* BaseController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -173,6 +172,7 @@
 			children = (
 				4EE225122B0E3283007D7A41 /* ArticViewController.swift */,
 				4EBA93442B0F379000B570FD /* ArticCustomCell.swift */,
+				4E9E33B82B1479C200112D9D /* ArticView.swift */,
 			);
 			path = Artic;
 			sourceTree = "<group>";
@@ -261,9 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E9E33B92B1479C200112D9D /* ArticView.swift in Sources */,
 				4EE225062B0E266A007D7A41 /* Resouces.swift in Sources */,
 				4EE225082B0E29FD007D7A41 /* NavBarController.swift in Sources */,
-				4EE2250B2B0E2F2D007D7A41 /* BaseController.swift in Sources */,
 				4E9ED0922B0DD201008B4CF6 /* GalleryController.swift in Sources */,
 				4EE225132B0E3283007D7A41 /* ArticViewController.swift in Sources */,
 				4EE225042B0E1FE6007D7A41 /* TabBarController.swift in Sources */,

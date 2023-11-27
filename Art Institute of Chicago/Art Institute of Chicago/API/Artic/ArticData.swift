@@ -7,7 +7,7 @@ import Foundation
 
 // MARK: - ArticData
 struct ArticData: Codable {
-    let pagination: Pagination?
+    let pagination: Pagination
     let data: [Datum]
     let info, config: Config?
 }
@@ -23,9 +23,9 @@ struct Datum: Codable {
 
 // MARK: - Pagination
 struct Pagination: Codable {
-    let total, limit, offset, totalPages: Int?
-    let currentPage: Int?
-    let nextURL: String?
+    let total, limit, offset, totalPages: Int
+    let currentPage: Int
+    let nextURL: String
 
     enum CodingKeys: String, CodingKey {
         case total, limit, offset

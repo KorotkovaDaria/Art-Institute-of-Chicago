@@ -39,7 +39,7 @@ final class TabBarController: UITabBarController {
         
         let galleryController = GalleryController()
         let favoriteController = FavoriteViewController()
-        let articController = ArticViewController()
+        let articController = ArticViewController(apiArticManager: APIArticManager.shared)
         
         let galleryNavigation = NavBarController(rootViewController: galleryController)
         let favoriteNavigation = NavBarController(rootViewController: favoriteController)

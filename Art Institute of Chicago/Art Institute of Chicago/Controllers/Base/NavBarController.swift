@@ -18,8 +18,7 @@ final class NavBarController: UINavigationController {
         view.backgroundColor = UIColor(named:Resouces.Colors.beige)
         navigationBar.isTranslucent = false
         navigationBar.standardAppearance.titleTextAttributes = [
-            .foregroundColor: UIColor(named: Resouces.Colors.pink) ?? UIColor.clear,
-            .font: Resouces.Fonts.emilea(with: 26)
+            .foregroundColor: UIColor(named: Resouces.Colors.pink) ?? UIColor.clear
         ]
     }
 }

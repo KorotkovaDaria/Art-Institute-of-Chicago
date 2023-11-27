@@ -6,6 +6,12 @@
 //
 
 import UIKit
+class DependencyManager {
+    static func createTabBarController() -> UIViewController {
+        let tabBarController = TabBarController()
+        return tabBarController
+    }
+}
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
@@ -13,11 +19,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        let tabBarController = TabBarController()
-        
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
+        let tabBarController = DependencyManager.createTabBarController()
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
         
