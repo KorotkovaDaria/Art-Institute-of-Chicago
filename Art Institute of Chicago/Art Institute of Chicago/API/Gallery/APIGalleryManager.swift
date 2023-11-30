@@ -1,26 +1,26 @@
 //
-//  ArticManager.swift
+//  APIGalleryManager.swift
 //  Art Institute of Chicago
 //
-//  Created by Daria on 22.11.2023.
+//  Created by Daria on 27.11.2023.
 //
 
 import Foundation
-// Протокол APIArticManaging описывает метод для получения информации из API
-protocol APIArticManaging {
-    func getInfo(completion: @escaping (Result<[ArticDatum], Error>) -> Void)
+// Протокол APIGalleryManaging описывает метод для получения информации из API
+protocol APIGalleryManaging {
+    func getInfo(completion: @escaping (Result<[GalleryDatum], Error>) -> Void)
 }
 // Enum APIGalleryError определяет возможные ошибки при работе с API
-enum APIArticError: Error {
+enum APIGalleryError: Error {
     case unknown
     case decodingError
 }
-// Класс APIArticManager реализует протокол APIArticManaging и отвечает за взаимодействие с API
-class APIArticManager: APIArticManaging {
-    static let shared = APIArticManager()
-    private let urlData = "https://api.artic.edu/api/v1/articles?limit=10&fields=title,copy"
+// Класс APIGalleryManager реализует протокол APIGalleryManaging и отвечает за взаимодействие с API
+class APIGalleryManager: APIGalleryManaging {
+    static let shared = APIGalleryManager()
+    private let urlData = "https://api.artic.edu/api/v1/artworks?limit=100&fields=title,description,image_id,date_start,date_end,artwork_type_title,artist_title,artist_titles"
     // Метод для получения информации из API
-    func getInfo(completion: @escaping (Result<[ArticDatum], Error>) -> Void) {
+    func getInfo(completion: @escaping (Result<[GalleryDatum], Error>) -> Void) {
         // Формирование URL из строки
         let url = URL(string: urlData)!
         // Создание запроса
@@ -30,15 +30,14 @@ class APIArticManager: APIArticManaging {
             // Проверка наличия данных
             guard let data = data else {
                 // В случае отсутствия данных вызываем обработчик с ошибкой
-                completion(.failure(error ?? APIArticError.unknown))
+                completion(.failure(error ?? APIGalleryError.unknown))
                 return
             }
-
             do {
                 // Декодирование полученных данных в объект GalleryData
-                let articData = try JSONDecoder().decode(ArticData.self, from: data)
+                let galleryData = try JSONDecoder().decode(GalleryData.self, from: data)
                 // Вызов обработчика с успешно полученными данными
-                completion(.success(articData.data))
+                completion(.success(galleryData.data))
             } catch {
                 // В случае ошибки декодирования вызываем обработчик с ошибкой
                 completion(.failure(APIArticError.decodingError))
@@ -48,4 +47,3 @@ class APIArticManager: APIArticManaging {
         task.resume()
     }
 }
-

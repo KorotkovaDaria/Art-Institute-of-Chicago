@@ -8,7 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		4E2FC5A52B0E3894009A1760 /* ArticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2FC5A42B0E3894009A1760 /* ArticData.swift */; };
-		4E9E33B92B1479C200112D9D /* ArticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E33B82B1479C200112D9D /* ArticView.swift */; };
+		4E437DF52B14BF3B00A903CB /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E437DF42B14BF3B00A903CB /* FavoriteView.swift */; };
+		4E437DF72B14D6B400A903CB /* DetailArticViewConnroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E437DF62B14D6B400A903CB /* DetailArticViewConnroller.swift */; };
+		4E437DF92B14DD0A00A903CB /* FavoriteCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E437DF82B14DD0A00A903CB /* FavoriteCustomCell.swift */; };
+		4E65E7D22B14930100457CD2 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E65E7D12B14930100457CD2 /* GalleryCollectionViewCell.swift */; };
+		4E65E7D52B149C1C00457CD2 /* APIGalleryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E65E7D42B149C1C00457CD2 /* APIGalleryManager.swift */; };
+		4E65E7D72B149D6B00457CD2 /* GalleryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E65E7D62B149D6B00457CD2 /* GalleryData.swift */; };
+		4E9E33B92B1479C200112D9D /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E33B82B1479C200112D9D /* ArticleView.swift */; };
 		4E9ED08E2B0DD201008B4CF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9ED08D2B0DD201008B4CF6 /* AppDelegate.swift */; };
 		4E9ED0902B0DD201008B4CF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9ED08F2B0DD201008B4CF6 /* SceneDelegate.swift */; };
 		4E9ED0922B0DD201008B4CF6 /* GalleryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9ED0912B0DD201008B4CF6 /* GalleryController.swift */; };
@@ -21,7 +27,7 @@
 		4E9ED0AB2B0DDB87008B4CF6 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E9ED0AA2B0DDB87008B4CF6 /* Montserrat-Light.ttf */; };
 		4EBA93452B0F379000B570FD /* ArticCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA93442B0F379000B570FD /* ArticCustomCell.swift */; };
 		4EE225042B0E1FE6007D7A41 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE225032B0E1FE6007D7A41 /* TabBarController.swift */; };
-		4EE225062B0E266A007D7A41 /* Resouces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE225052B0E266A007D7A41 /* Resouces.swift */; };
+		4EE225062B0E266A007D7A41 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE225052B0E266A007D7A41 /* Resources.swift */; };
 		4EE225082B0E29FD007D7A41 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE225072B0E29FD007D7A41 /* NavBarController.swift */; };
 		4EE225112B0E3257007D7A41 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE225102B0E3257007D7A41 /* FavoriteViewController.swift */; };
 		4EE225132B0E3283007D7A41 /* ArticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE225122B0E3283007D7A41 /* ArticViewController.swift */; };
@@ -30,7 +36,13 @@
 
 /* Begin PBXFileReference section */
 		4E2FC5A42B0E3894009A1760 /* ArticData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticData.swift; sourceTree = "<group>"; };
-		4E9E33B82B1479C200112D9D /* ArticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticView.swift; sourceTree = "<group>"; };
+		4E437DF42B14BF3B00A903CB /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		4E437DF62B14D6B400A903CB /* DetailArticViewConnroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailArticViewConnroller.swift; sourceTree = "<group>"; };
+		4E437DF82B14DD0A00A903CB /* FavoriteCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCustomCell.swift; sourceTree = "<group>"; };
+		4E65E7D12B14930100457CD2 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
+		4E65E7D42B149C1C00457CD2 /* APIGalleryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIGalleryManager.swift; sourceTree = "<group>"; };
+		4E65E7D62B149D6B00457CD2 /* GalleryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryData.swift; sourceTree = "<group>"; };
+		4E9E33B82B1479C200112D9D /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 		4E9ED08A2B0DD201008B4CF6 /* Art Institute of Chicago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Art Institute of Chicago.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E9ED08D2B0DD201008B4CF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E9ED08F2B0DD201008B4CF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +57,7 @@
 		4E9ED0AA2B0DDB87008B4CF6 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		4EBA93442B0F379000B570FD /* ArticCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticCustomCell.swift; sourceTree = "<group>"; };
 		4EE225032B0E1FE6007D7A41 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		4EE225052B0E266A007D7A41 /* Resouces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resouces.swift; sourceTree = "<group>"; };
+		4EE225052B0E266A007D7A41 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		4EE225072B0E29FD007D7A41 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		4EE225102B0E3257007D7A41 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		4EE225122B0E3283007D7A41 /* ArticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +75,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E65E7D32B149BDE00457CD2 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				4E65E7D42B149C1C00457CD2 /* APIGalleryManager.swift */,
+				4E65E7D62B149D6B00457CD2 /* GalleryData.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
 		4E9ED0812B0DD201008B4CF6 = {
 			isa = PBXGroup;
 			children = (
@@ -105,7 +126,7 @@
 		4EB00E002B0DE531009A380C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4EE225052B0E266A007D7A41 /* Resouces.swift */,
+				4EE225052B0E266A007D7A41 /* Resources.swift */,
 				4E9ED0962B0DD203008B4CF6 /* Assets.xcassets */,
 				4E9ED0982B0DD203008B4CF6 /* LaunchScreen.storyboard */,
 				4E9ED09B2B0DD203008B4CF6 /* Info.plist */,
@@ -126,6 +147,7 @@
 		4EB00E022B0DE5E5009A380C /* API */ = {
 			isa = PBXGroup;
 			children = (
+				4E65E7D32B149BDE00457CD2 /* Gallery */,
 				4EE225142B0E34A9007D7A41 /* Artic */,
 			);
 			path = API;
@@ -155,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				4E9ED0912B0DD201008B4CF6 /* GalleryController.swift */,
+				4E65E7D12B14930100457CD2 /* GalleryCollectionViewCell.swift */,
 			);
 			path = Gallery;
 			sourceTree = "<group>";
@@ -163,6 +186,8 @@
 			isa = PBXGroup;
 			children = (
 				4EE225102B0E3257007D7A41 /* FavoriteViewController.swift */,
+				4E437DF42B14BF3B00A903CB /* FavoriteView.swift */,
+				4E437DF82B14DD0A00A903CB /* FavoriteCustomCell.swift */,
 			);
 			path = Favorite;
 			sourceTree = "<group>";
@@ -172,7 +197,8 @@
 			children = (
 				4EE225122B0E3283007D7A41 /* ArticViewController.swift */,
 				4EBA93442B0F379000B570FD /* ArticCustomCell.swift */,
-				4E9E33B82B1479C200112D9D /* ArticView.swift */,
+				4E9E33B82B1479C200112D9D /* ArticleView.swift */,
+				4E437DF62B14D6B400A903CB /* DetailArticViewConnroller.swift */,
 			);
 			path = Artic;
 			sourceTree = "<group>";
@@ -261,17 +287,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E9E33B92B1479C200112D9D /* ArticView.swift in Sources */,
-				4EE225062B0E266A007D7A41 /* Resouces.swift in Sources */,
+				4E9E33B92B1479C200112D9D /* ArticleView.swift in Sources */,
+				4EE225062B0E266A007D7A41 /* Resources.swift in Sources */,
 				4EE225082B0E29FD007D7A41 /* NavBarController.swift in Sources */,
 				4E9ED0922B0DD201008B4CF6 /* GalleryController.swift in Sources */,
 				4EE225132B0E3283007D7A41 /* ArticViewController.swift in Sources */,
+				4E65E7D72B149D6B00457CD2 /* GalleryData.swift in Sources */,
 				4EE225042B0E1FE6007D7A41 /* TabBarController.swift in Sources */,
 				4EBA93452B0F379000B570FD /* ArticCustomCell.swift in Sources */,
+				4E437DF92B14DD0A00A903CB /* FavoriteCustomCell.swift in Sources */,
+				4E437DF52B14BF3B00A903CB /* FavoriteView.swift in Sources */,
 				4E9ED08E2B0DD201008B4CF6 /* AppDelegate.swift in Sources */,
 				4EE225112B0E3257007D7A41 /* FavoriteViewController.swift in Sources */,
+				4E437DF72B14D6B400A903CB /* DetailArticViewConnroller.swift in Sources */,
+				4E65E7D52B149C1C00457CD2 /* APIGalleryManager.swift in Sources */,
 				4E9ED0902B0DD201008B4CF6 /* SceneDelegate.swift in Sources */,
 				4E2FC5A52B0E3894009A1760 /* ArticData.swift in Sources */,
+				4E65E7D22B14930100457CD2 /* GalleryCollectionViewCell.swift in Sources */,
 				4EE225162B0E34F9007D7A41 /* APIArticManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

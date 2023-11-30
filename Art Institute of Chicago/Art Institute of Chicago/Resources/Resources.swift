@@ -6,14 +6,16 @@
 //
 
 import UIKit
-enum Resouces {
+
+enum Resources {
+    // Enum для названий кастомных цветов
     enum Colors {
         static var beige = "Beige"
         static var beige2 = "Beige2"
         static var pink = "Pink"
         static var dark = "Dark"
     }
-    // enum для таббара
+    // Enum для tab bar
     enum Strings {
         enum TabBar {
             static var gallery = "Gallery"
@@ -21,7 +23,7 @@ enum Resouces {
             static var artic = "Artic"
         }
     }
-    
+    // Enum для tab bar system image
     enum Image {
         enum TabBar {
             static var gallery = "photo.circle"
@@ -29,7 +31,7 @@ enum Resouces {
             static var artic = "book.circle"
         }
     }
-    
+    // Enum шрифты
     enum Fonts {
         static func emilea(with size: CGFloat) -> UIFont {
             UIFont(name: "Emilea", size: size) ?? UIFont()

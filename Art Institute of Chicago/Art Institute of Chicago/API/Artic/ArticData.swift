@@ -8,7 +8,7 @@ import Foundation
 // MARK: - ArticData
 struct ArticData: Codable {
     let pagination: Pagination
-    let data: [Datum]
+    let data: [ArticDatum]
     let info, config: Config?
 }
 
@@ -17,7 +17,7 @@ struct Config: Codable {
 }
 
 // MARK: - Datum
-struct Datum: Codable {
+struct ArticDatum: Codable {
     let title, copy: String
 }
 

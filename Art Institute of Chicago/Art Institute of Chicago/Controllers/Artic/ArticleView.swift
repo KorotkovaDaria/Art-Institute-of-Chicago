@@ -6,35 +6,43 @@
 //
 import UIKit
 
-class ArticView: UIView {
-    var articTitle: [Datum] = []
+class ArticleView: UIView {
+    var articleData: [ArticDatum] = []
     lazy var tableView = UITableView()
     
     //MARK: - Private properties
-    private let cellSpacingHeight: CGFloat = 16
-    private let articImageArr = ["Artic1","Artic2","Artic3","Artic4","Artic5","Artic6","Artic7","Artic8","Artic9","Artic10"]
+    private let cellSpacingHeight: CGFloat = 16 // Расстояние между ячейками
+    private let articleImageNames = ["Artic1","Artic2","Artic3","Artic4","Artic5","Artic6","Artic7","Artic8","Artic9","Artic10"]
     
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
     }
-
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    // Настройка article view
     private func configure() {
-        backgroundColor = UIColor(named:Resouces.Colors.beige)
+        setBackgroundColor() // Вызов отдельного метода для настройки цвета фона
         addSubview(tableView)
+        setupTableView()
+    }
+    
+    private func setBackgroundColor() {
+        backgroundColor = UIColor(named: Resources.Colors.beige)
+    }
+    // Настройка table view
+    private func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
         configureTableView()
     }
-
+    // Настройка свойств tableView
     private func configureTableView() {
         tableView.register(ArticCustomCell.self,forCellReuseIdentifier: "cell")
-        tableView.backgroundColor = UIColor(named:Resouces.Colors.beige)
+        tableView.backgroundColor = UIColor(named:Resources.Colors.beige)
         tableView.rowHeight = 207
         tableView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -45,33 +53,35 @@ class ArticView: UIView {
         ])
     }
 }
-
-extension ArticView: UITableViewDataSource, UITableViewDelegate {
+// MARK: - UITableViewDataSource, UITableViewDelegate extension
+extension ArticleView: UITableViewDataSource, UITableViewDelegate {
+    // Настройка ячейки по определенному индексу
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ArticCustomCell
-        let textValue = articTitle[indexPath.section]
-        let imageIndex = indexPath.section % articImageArr.count
-        cell.articImageBacground.image = UIImage(named: articImageArr[imageIndex])
+        let textValue = articleData[indexPath.section]
+        let imageIndex = indexPath.section % articleImageNames.count
+        cell.articImageBacground.image = UIImage(named: articleImageNames[imageIndex])
         cell.articLabel.text = "\(textValue.title)"
         return cell
     }
-    
+    // Количество разделов
     func numberOfSections(in tableView: UITableView) -> Int {
-        return self.articTitle.count
+        return self.articleData.count
     }
-    
+    // Количество строк в разделе
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 1
-        }
-    
+        return 1
+    }
+    // Высота заголовка в разделе
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-            return cellSpacingHeight
-        }
-    
+        return cellSpacingHeight
+    }
+    // Кастомный вид заголовка в разделе
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-            let headerView = UIView()
-            headerView.backgroundColor = UIColor.clear
-            return headerView
-        }
-
+        let headerView = UIView()
+        headerView.backgroundColor = UIColor.clear
+        return headerView
+    }
 }
+
+
