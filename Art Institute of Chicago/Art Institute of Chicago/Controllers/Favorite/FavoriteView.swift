@@ -7,13 +7,10 @@
 import UIKit
 
 class FavoriteView: UIView {
-        var favoriteData: [ArticDatum] = []
+        var favoriteData: [GalleryDatum] = []
         lazy var favoriteTableView = UITableView()
-        
-        //MARK: - Private properties
-        private let cellSpacingHeight: CGFloat = 4
 
-        override init(frame: CGRect) {
+    override init(frame: CGRect) {
             super.init(frame: frame)
             configure()
         }
@@ -37,7 +34,7 @@ class FavoriteView: UIView {
             favoriteTableView.layer.cornerRadius = 10
             favoriteTableView.translatesAutoresizingMaskIntoConstraints = false
             NSLayoutConstraint.activate([
-                favoriteTableView.topAnchor.constraint(equalTo: self.topAnchor, constant: 106),
+                favoriteTableView.topAnchor.constraint(equalTo: self.topAnchor, constant: 86),
                 favoriteTableView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 8),
                 favoriteTableView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -8),
                 favoriteTableView.bottomAnchor.constraint(equalTo: self.bottomAnchor)
@@ -46,35 +43,31 @@ class FavoriteView: UIView {
     }
 
 extension FavoriteView: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let galleryItem = favoriteData[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FavoriteCustomCell
+        if let imageID = galleryItem.imageID {
+            APIGalleryManager.shared.getImageData(imageID: imageID) { result in
+                switch result {
+                case .success(let imageData):
+                    DispatchQueue.main.async {
+                        cell.favoriteImage.image = UIImage(data: imageData)
+                    }
+                case .failure(let error):
+                    print("Error fetching image data: \(error)")
+                }
+            }
+        } else {
+            cell.favoriteImage.image = UIImage(named: "ImageTabBarBack")
+        }
+        cell.favoriteArtistLabel.text = galleryItem.artistTitle ?? "Unknown Artist"
+        cell.favoriteTitleLabel.text = galleryItem.title
+        return cell
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return self.favoriteData.count
     }
-    
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FavoriteCustomCell
-            cell.favoriteImage.image = UIImage(named: "Artic1")
-            cell.favoriteArtistLabel.text = "Ivan Ivanov"
-            cell.favoriteTitleLabel.text = "Favorite Label Title"
-            return cell
-        }
-        
-        func numberOfSections(in tableView: UITableView) -> Int {
-            return 10
-        }
-        
-//        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//                return 1
-//            }
-//
-//        func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//                return cellSpacingHeight
-//            }
-//
-//        func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//                let headerView = UIView()
-//                headerView.backgroundColor = UIColor.clear
-//                return headerView
-//            }
-    }
+
+}
 
 

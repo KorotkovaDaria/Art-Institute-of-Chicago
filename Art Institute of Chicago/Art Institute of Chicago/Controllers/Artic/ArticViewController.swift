@@ -12,6 +12,7 @@ class ArticViewController: UIViewController{
     private let apiArticManager: APIArticManaging
     //View отвественный за отображение Artic data
     private let articView = ArticleView()
+//    private let loadingViewController = LoadingViewController()
     
     
     //MARK: - Initialization
@@ -34,6 +35,7 @@ class ArticViewController: UIViewController{
         APIArticManager.shared.getInfo { [weak self] result in
             DispatchQueue.main.async {
                 guard let self = self else { return }
+                // Скрыть экран загрузки после завершения запроса
                 // Обработка результата запроса API
                 switch result {
                 case .success(let data):

@@ -23,6 +23,7 @@ class ArticCustomCell: UITableViewCell {
         articImageBacground.contentMode = .scaleAspectFill
         articImageBacground.layer.cornerRadius = 10
         articImageBacground.layer.masksToBounds = true
+        
         // Настройка метки для отображения articLabel
         articLabel.frame = CGRect(x: 25, y: 20, width: 305, height: 187)
         articLabel.font = UIFont(name: "Montserrat-ExtraBold", size: 24)

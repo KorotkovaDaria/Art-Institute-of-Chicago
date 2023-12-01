@@ -25,6 +25,8 @@
 		4E9ED0A72B0DDB5A008B4CF6 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E9ED0A62B0DDB5A008B4CF6 /* Montserrat-ExtraBold.ttf */; };
 		4E9ED0A92B0DDB74008B4CF6 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E9ED0A82B0DDB74008B4CF6 /* Montserrat-Regular.ttf */; };
 		4E9ED0AB2B0DDB87008B4CF6 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E9ED0AA2B0DDB87008B4CF6 /* Montserrat-Light.ttf */; };
+		4EAB71572B18C57700388AF1 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAB71562B18C57700388AF1 /* GalleryView.swift */; };
+		4EAB71592B19E26900388AF1 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAB71582B19E26900388AF1 /* LoadingViewController.swift */; };
 		4EBA93452B0F379000B570FD /* ArticCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBA93442B0F379000B570FD /* ArticCustomCell.swift */; };
 		4EE225042B0E1FE6007D7A41 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE225032B0E1FE6007D7A41 /* TabBarController.swift */; };
 		4EE225062B0E266A007D7A41 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE225052B0E266A007D7A41 /* Resources.swift */; };
@@ -55,6 +57,8 @@
 		4E9ED0A62B0DDB5A008B4CF6 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
 		4E9ED0A82B0DDB74008B4CF6 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		4E9ED0AA2B0DDB87008B4CF6 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		4EAB71562B18C57700388AF1 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		4EAB71582B19E26900388AF1 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		4EBA93442B0F379000B570FD /* ArticCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticCustomCell.swift; sourceTree = "<group>"; };
 		4EE225032B0E1FE6007D7A41 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		4EE225052B0E266A007D7A41 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
@@ -160,6 +164,7 @@
 				4EE2250E2B0E31F0007D7A41 /* Favorite */,
 				4EE2250D2B0E31E2007D7A41 /* Gallery */,
 				4EE2250C2B0E31C6007D7A41 /* Base */,
+				4EAB71582B19E26900388AF1 /* LoadingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 			children = (
 				4E9ED0912B0DD201008B4CF6 /* GalleryController.swift */,
 				4E65E7D12B14930100457CD2 /* GalleryCollectionViewCell.swift */,
+				4EAB71562B18C57700388AF1 /* GalleryView.swift */,
 			);
 			path = Gallery;
 			sourceTree = "<group>";
@@ -294,6 +300,7 @@
 				4EE225132B0E3283007D7A41 /* ArticViewController.swift in Sources */,
 				4E65E7D72B149D6B00457CD2 /* GalleryData.swift in Sources */,
 				4EE225042B0E1FE6007D7A41 /* TabBarController.swift in Sources */,
+				4EAB71592B19E26900388AF1 /* LoadingViewController.swift in Sources */,
 				4EBA93452B0F379000B570FD /* ArticCustomCell.swift in Sources */,
 				4E437DF92B14DD0A00A903CB /* FavoriteCustomCell.swift in Sources */,
 				4E437DF52B14BF3B00A903CB /* FavoriteView.swift in Sources */,
@@ -303,6 +310,7 @@
 				4E65E7D52B149C1C00457CD2 /* APIGalleryManager.swift in Sources */,
 				4E9ED0902B0DD201008B4CF6 /* SceneDelegate.swift in Sources */,
 				4E2FC5A52B0E3894009A1760 /* ArticData.swift in Sources */,
+				4EAB71572B18C57700388AF1 /* GalleryView.swift in Sources */,
 				4E65E7D22B14930100457CD2 /* GalleryCollectionViewCell.swift in Sources */,
 				4EE225162B0E34F9007D7A41 /* APIArticManager.swift in Sources */,
 			);

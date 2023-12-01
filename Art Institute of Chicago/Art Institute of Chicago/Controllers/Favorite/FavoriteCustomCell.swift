@@ -34,10 +34,11 @@ class FavoriteCustomCell: UITableViewCell {
         favoriteTitleLabel.font = UIFont(name: "Montserrat-Light", size: 11)
         favoriteTitleLabel.textColor = UIColor(named: Resources.Colors.dark)
         favoriteTitleLabel.numberOfLines = 0
-        favoriteTitleLabel.lineBreakMode = .byWordWrapping
+        //favoriteTitleLabel.lineBreakMode = .byWordWrapping
         favoriteTitleLabel.textAlignment = .left
         
         self.backgroundColor = UIColor(named: Resources.Colors.beige2)
+        self.layer.cornerRadius = 10
     }
     
     

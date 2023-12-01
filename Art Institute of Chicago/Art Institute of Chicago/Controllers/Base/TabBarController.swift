@@ -30,11 +30,12 @@ final class TabBarController: UITabBarController {
         // Настройка внешнего вида tab bar
         tabBar.tintColor = UIColor(named:Resources.Colors.pink)
         tabBar.unselectedItemTintColor = UIColor(named:Resources.Colors.beige)
-        tabBar.backgroundColor = UIColor(named:Resources.Colors.dark)
+        tabBar.backgroundColor = UIColor(named: Resources.Colors.dark)
+        tabBar.backgroundImage = UIImage(named: "ImageTabBarBack")
         tabBar.layer.masksToBounds = true
         // Создание VC для каждой вкладки
         let galleryController = GalleryController()
-        let favoriteController = FavoriteViewController()
+        let favoriteController = FavoriteViewController(apiGalleryManager: APIGalleryManager.shared)
         let articController = ArticViewController(apiArticManager: APIArticManager.shared)
         // Создание Navigation controller для каждого VC
         let galleryNavigation = NavBarController(rootViewController: galleryController)
