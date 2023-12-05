@@ -19,7 +19,7 @@ enum APIGalleryError: Error {
 // Класс APIGalleryManager реализует протокол APIGalleryManaging и отвечает за взаимодействие с API
 class APIGalleryManager: APIGalleryManaging {
     static let shared = APIGalleryManager()
-    private let urlData = "https://api.artic.edu/api/v1/artworks?limit=20&fields=title,description,image_id,date_start,date_end,artwork_type_title,artist_title,artist_titles"
+    private let urlData = "https://api.artic.edu/api/v1/artworks?limit=100&fields=title,description,image_id,date_start,date_end,artwork_type_title,artist_title,artist_titles"
     private let iiifBaseURL = "https://www.artic.edu/iiif/2/"
     // Метод для получения информации из API
     func getInfo(completion: @escaping (Result<[GalleryDatum], Error>) -> Void) {

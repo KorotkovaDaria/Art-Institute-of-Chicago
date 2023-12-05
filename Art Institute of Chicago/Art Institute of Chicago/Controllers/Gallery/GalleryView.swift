@@ -63,7 +63,7 @@ extension GalleryView: UICollectionViewDelegate, UICollectionViewDataSource, UIC
                 }
             }
         } else {
-            cell.imageView.image = UIImage(named: "ImageTabBarBack")
+            cell.imageView.image = UIImage(named: "Art doesn't have a photo")
         }
         return cell
     }
