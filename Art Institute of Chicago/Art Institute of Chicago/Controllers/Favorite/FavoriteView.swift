@@ -58,7 +58,7 @@ extension FavoriteView: UITableViewDataSource, UITableViewDelegate {
                 }
             }
         } else {
-            cell.favoriteImage.image = UIImage(named: "Art doesn't have a photo")
+            cell.favoriteImage.image = UIImage(named: "ArtDoesNotPhoto")
         }
         cell.favoriteArtistLabel.text = galleryItem.artistTitle ?? "Unknown Artist"
         cell.favoriteTitleLabel.text = galleryItem.title
@@ -66,10 +66,6 @@ extension FavoriteView: UITableViewDataSource, UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.favoriteData.count
-    }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        
     }
 
 }
