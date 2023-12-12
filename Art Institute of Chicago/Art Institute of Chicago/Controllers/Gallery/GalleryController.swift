@@ -9,6 +9,7 @@ import UIKit
 class GalleryController: UIViewController {
     private let galleryView = GalleryView()
     private var apiGalleryData: APIGalleryManaging
+    
 
     //MARK: - Initialization
     init(apiArticManager: APIGalleryManaging = APIGalleryManager.shared) {

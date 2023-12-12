@@ -12,7 +12,8 @@ class ArticViewController: UIViewController{
     private let apiArticManager: APIArticManaging
     //View отвественный за отображение Artic data
     private let articView = ArticleView()
-//    private let loadingViewController = LoadingViewController()
+    
+    
     
     
     //MARK: - Initialization
@@ -31,6 +32,7 @@ class ArticViewController: UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Art Institute of Chicago"
         // Выполнение запроса API для получения Arctic data
         APIArticManager.shared.getInfo { [weak self] result in
             DispatchQueue.main.async {

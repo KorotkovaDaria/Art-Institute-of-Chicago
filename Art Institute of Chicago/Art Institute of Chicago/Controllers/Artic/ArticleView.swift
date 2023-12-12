@@ -9,7 +9,6 @@ import UIKit
 class ArticleView: UIView {
     var articleData: [ArticDatum] = []
     lazy var tableView = UITableView()
-    
     //MARK: - Private properties
     private let cellSpacingHeight: CGFloat = 16 // Расстояние между ячейками
     private let articleImageNames = ["Artic1","Artic2","Artic3","Artic4","Artic5","Artic6","Artic7","Artic8","Artic9","Artic10"]
@@ -84,6 +83,7 @@ extension ArticleView: UITableViewDataSource, UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
     }
 }
 
