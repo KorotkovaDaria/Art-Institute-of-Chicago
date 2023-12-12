@@ -8,10 +8,6 @@
 import UIKit
 
     class DetailArticViewController: UIViewController {
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            self.viewDidLoad()
-            self.view.backgroundColor = .purple
-        }
+        
 }
 
