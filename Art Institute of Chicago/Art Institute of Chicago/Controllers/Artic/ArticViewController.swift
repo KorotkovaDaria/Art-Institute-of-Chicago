@@ -12,10 +12,6 @@ class ArticViewController: UIViewController{
     private let apiArticManager: APIArticManaging
     //View отвественный за отображение Artic data
     private let articView = ArticleView()
-    
-    
-    
-    
     //MARK: - Initialization
     init(apiArticManager: APIArticManaging = APIArticManager.shared) {
         self.apiArticManager = apiArticManager
@@ -28,13 +24,14 @@ class ArticViewController: UIViewController{
     //MARK: - View Lifecycle
     override func loadView() {
         view = articView
+        articView.delegate = self
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Art Institute of Chicago"
         // Выполнение запроса API для получения Arctic data
-        APIArticManager.shared.getInfo { [weak self] result in
+        apiArticManager.getInfo { [weak self] result in
             DispatchQueue.main.async {
                 guard let self = self else { return }
                 // Скрыть экран загрузки после завершения запроса
@@ -50,5 +47,13 @@ class ArticViewController: UIViewController{
                 }
             }
         }
+    }
+}
+extension ArticViewController: ArticleViewDelegate {
+    func didSelectItem(withID articDatum: ArticDatum) {
+        let vc = DetailArticViewController(articDatum: articDatum)
+        vc.modalPresentationStyle = .currentContext
+        vc.modalTransitionStyle = .crossDissolve
+        present(vc, animated: true)
     }
 }

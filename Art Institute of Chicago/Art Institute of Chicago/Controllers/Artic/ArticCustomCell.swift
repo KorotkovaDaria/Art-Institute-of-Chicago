@@ -26,7 +26,7 @@ class ArticCustomCell: UITableViewCell {
         
         // Настройка метки для отображения articLabel
         articLabel.frame = CGRect(x: 25, y: 20, width: 305, height: 187)
-        articLabel.font = UIFont(name: "Montserrat-ExtraBold", size: 24)
+        articLabel.font = UIFont(name: Resources.Fonts.montserratExtraBold, size: 24)
         articLabel.textColor = UIColor(named: Resources.Colors.beige)
         articLabel.numberOfLines = 0
         articLabel.lineBreakMode = .byWordWrapping

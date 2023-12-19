@@ -6,9 +6,14 @@
 //
 import UIKit
 
+protocol ArticleViewDelegate {
+    func didSelectItem(withID: ArticDatum)
+}
+
 class ArticleView: UIView {
     var articleData: [ArticDatum] = []
     lazy var tableView = UITableView()
+    var delegate: ArticleViewDelegate?
     //MARK: - Private properties
     private let cellSpacingHeight: CGFloat = 16 // Расстояние между ячейками
     private let articleImageNames = ["Artic1","Artic2","Artic3","Artic4","Artic5","Artic6","Artic7","Artic8","Artic9","Artic10"]
@@ -83,8 +88,6 @@ extension ArticleView: UITableViewDataSource, UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
+        delegate?.didSelectItem(withID: articleData[indexPath.section])
     }
 }
-
-

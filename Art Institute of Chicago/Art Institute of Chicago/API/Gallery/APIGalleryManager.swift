@@ -4,7 +4,6 @@
 //
 //  Created by Daria on 27.11.2023.
 //
-
 import Foundation
 // Протокол APIGalleryManaging описывает метод для получения информации из API
 protocol APIGalleryManaging {

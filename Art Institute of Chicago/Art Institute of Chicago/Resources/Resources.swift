@@ -30,23 +30,16 @@ enum Resources {
             static var favorite = "heart.circle"
             static var artic = "book.circle"
         }
+        enum SystemIcon {
+            static var backButton = "arrowshape.backward.circle.fill"
+        }
     }
     // Enum шрифты
     enum Fonts {
-        static func emilea(with size: CGFloat) -> UIFont {
-            UIFont(name: "Emilea", size: size) ?? UIFont()
-        }
-        static func montserratExtraBold (with size: CGFloat) -> UIFont {
-            UIFont(name: "Montserrat-ExtraBold", size: size) ?? UIFont()
-        }
-        static func montserratBold(with size: CGFloat) -> UIFont {
-            UIFont(name: "Montserrat-Bold", size: size) ?? UIFont()
-        }
-        static func montserratRegular(with size: CGFloat) -> UIFont {
-            UIFont(name: "Montserrat-Regular", size: size) ?? UIFont()
-        }
-        static func montserratLight(with size: CGFloat) -> UIFont {
-            UIFont(name: "Montserrat-Light", size: size) ?? UIFont()
-        }
+        static var emilea = "Emilea"
+        static var montserratExtraBold = "Montserrat-ExtraBold"
+        static var montserratBold = "Montserrat-Bold"
+        static var montserratRegular = "Montserrat-Regular"
+        static var montserratLight = "Montserrat-Light"
     }
 }
