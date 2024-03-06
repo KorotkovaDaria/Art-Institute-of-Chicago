@@ -1,42 +1,42 @@
 //
-//  FavoriteViewController.swift
+//  ViewController.swift
 //  Art Institute of Chicago
 //
 //  Created by Daria on 22.11.2023.
 //
-
 import UIKit
 
-class FavoriteViewController: UIViewController {
-    private let apiGalleryManager: APIGalleryManaging
-    private var favoriteView = FavoriteView()
+class GalleryVC: UIViewController {
+    private let galleryView = GalleryView()
+    private var apiGalleryData: APIGalleryManaging
     
-    init(apiGalleryManager: APIGalleryManaging, favoriteView: FavoriteView = FavoriteView()) {
-        self.apiGalleryManager = apiGalleryManager
-        self.favoriteView = favoriteView
+
+    //MARK: - Initialization
+    init(apiArticManager: APIGalleryManaging = APIGalleryManager.shared) {
+        self.apiGalleryData = apiArticManager
         super.init(nibName: nil, bundle: nil)
     }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    //MARK: - View Lifecycle
     override func loadView() {
-        super.loadView()
-        view = favoriteView
-        
+        view = galleryView
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        APIGalleryManager.shared.getInfo { [weak self] result in
+        // Выполнение запроса API для получения data
+        APIGalleryManager.shared.getInfo(page: 1) { [weak self] result in
             DispatchQueue.main.async {
                 guard let self = self else { return }
-                // Скрыть экран загрузки после завершения запроса
                 // Обработка результата запроса API
                 switch result {
                 case .success(let data):
                     // Обработка успешного результата
-                    self.favoriteView.favoriteData = data
-                    self.favoriteView.favoriteTableView.reloadData()
+                    self.galleryView.galleryData = data
+                    self.galleryView.collectionView.reloadData()
                 case .failure(let error):
                     // Обработка ошибки
                     print("Error fetching data: \(error)")

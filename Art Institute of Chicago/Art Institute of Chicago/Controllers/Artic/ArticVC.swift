@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ArticViewController: UIViewController{
+class ArticVC: UIViewController{
     //MARK: - Private properties
     private let apiArticManager: APIArticManaging
     //View отвественный за отображение Artic data
@@ -49,7 +49,7 @@ class ArticViewController: UIViewController{
         }
     }
 }
-extension ArticViewController: ArticleViewDelegate {
+extension ArticVC: ArticleViewDelegate {
     func didSelectItem(withID articDatum: ArticDatum) {
         let vc = DetailArticViewController(articDatum: articDatum)
         vc.modalPresentationStyle = .currentContext
